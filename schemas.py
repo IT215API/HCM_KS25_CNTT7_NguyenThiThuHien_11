@@ -18,4 +18,4 @@ def notice_api(statusCode: int, error:Any, message: str, data: Any):
         statusCode=statusCode,
         error=error,
         message=message,
-        data=data)
+        data=data).model_dump()
